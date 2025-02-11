@@ -1,8 +1,4 @@
-Here's a **repository description** for your **Chill Spots API** project:
-
----
-
-### **Chill Spots API**
+## **Chill Spots API**
 A RESTful API built with **Express.js** and **MySQL** for managing favorite chill spots in Kenya. It includes **authentication, authorization, rate limiting, and Swagger documentation**.
 
 #### **Features**
