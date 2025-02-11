@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Chill Spots API",
+    "version": "1.0.0",
+    "description": "API for managing favorite chill spots with authentication and rate limiting."
+  },
+  "servers": [
+    { "url": "http://localhost:3000", "description": "Local server" }
+  ],
+  "paths": {
+    "/auth/register": {
+      "post": { "summary": "Register a new user" }
+    },
+    "/auth/login": {
+      "post": { "summary": "User login" }
+    },
+    "/chill-spots": {
+      "get": { "summary": "Get list of chill spots" },
+      "post": { "summary": "Add a new chill spot" }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  }
+}
