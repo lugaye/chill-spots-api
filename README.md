@@ -21,6 +21,7 @@ A RESTful API built with **Express.js** and **MySQL** for managing favorite chil
 - **Middleware:** Express-rate-limit
 
 #### **API Endpoints**
+
 | Method | Endpoint        | Description                     |
 |--------|----------------|---------------------------------|
 | POST   | /register      | Register a new user            |
@@ -60,6 +61,46 @@ A RESTful API built with **Express.js** and **MySQL** for managing favorite chil
 Access the **API Documentation** at:  
 [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
 
+
+### **Repository Structure**
+```
+chill-spots-api/
+│-- .env.example
+│-- package.json
+│-- server.js
+│-- swagger.json
+│-- db/
+│   │-- schema.sql
+│   │-- seed.sql
+│-- routes/
+│   │-- auth.js
+│   │-- chillSpots.js
+│-- middleware/
+│   │-- authMiddleware.js
+│   │-- rateLimit.js
+│-- README.md
+```
+
 ---
 
-Let me know if you need any tweaks! 🚀
+### **Descriptions of Files**
+1. **`.env.example`** – Environment variables example file. Users should copy this to `.env` and fill in their credentials.
+2. **`package.json`** – Contains project dependencies and scripts.
+3. **`server.js`** – The main entry point for the Express server.
+4. **`swagger.json`** – OpenAPI documentation for the API.
+5. **`db/schema.sql`** – SQL script for setting up the database schema.
+6. **`db/seed.sql`** – Sample data for Kenyan chill spots.
+7. **`routes/auth.js`** – Handles authentication (registration & login).
+8. **`routes/chillSpots.js`** – Handles chill spot-related operations.
+9. **`middleware/authMiddleware.js`** – Middleware for JWT authentication.
+10. **`middleware/rateLimit.js`** – Middleware for rate limiting.
+11. **`README.md`** – Documentation on how to set up and run the API.
+
+---
+
+## API Documentation
+Swagger docs available at: [http://localhost:3000/api-docs](http://localhost:3000/api-docs)
+
+## License
+MIT License
+```
