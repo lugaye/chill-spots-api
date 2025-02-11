@@ -28,7 +28,7 @@ A RESTful API built with **Express.js** and **MySQL** for managing favorite chil
 #### **Setup & Installation**
 1. Clone the repository:  
    ```sh
-   git clone https://github.com/your-username/chill-spots-api.git
+   git clone https://github.com/lugaye/chill-spots-api.git
    cd chill-spots-api
    ```
 2. Install dependencies:  
